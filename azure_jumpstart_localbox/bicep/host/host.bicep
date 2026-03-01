@@ -25,16 +25,9 @@ param location string = resourceGroup().location
 
 @description('Region to register Azure Local instance in. This is the region where the Azure Local instance resources will be created. The region must be one of the supported Azure Local regions.')
 @allowed([
-  'australiaeast'
-  'southcentralus'
-  'eastus'
   'westeurope'
-  'southeastasia'
-  'canadacentral'
-  'japaneast'
-  'centralindia'
 ])
-param azureLocalInstanceLocation string = 'australiaeast'
+param azureLocalInstanceLocation string = 'westeurope'
 
 @description('Resource Id of the subnet in the virtual network')
 param subnetId string
